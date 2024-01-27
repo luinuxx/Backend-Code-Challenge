@@ -18,19 +18,19 @@ Te devolvera una salida en formato JSON
         "name": "West New York, NJ, US",
         "latitude": 40.78788,
         "longitude": -74.01431,
-        "score": "0.0"
+        "score": "0.6"
     },
     {
         "name": "East New York, NY, US",
         "latitude": 40.66677,
         "longitude": -73.88236,
-        "score": "0.0"
+        "score": "0.6"
     },
     {
         "name": "New York City, NY, US",
         "latitude": 40.71427,
         "longitude": -74.00597,
-        "score": "0.0"
+        "score": "0.6"
     }
 ]
 ```
