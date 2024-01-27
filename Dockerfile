@@ -1,14 +1,14 @@
-# Usa una imagen base que contenga Java y la máquina virtual de Spring Boot
-FROM adoptopenjdk/openjdk11:alpine-jre
+# Usa una imagen de OpenJDK para Java 11 como base
+FROM openjdk:11-jre-slim
 
-# Establece el directorio de trabajo
-WORKDIR /Backend-Code-Challenge
+# Establece el directorio de trabajo en /app
+WORKDIR /app
 
-# Copia el JAR construido a la imagen
-COPY build/libs/codingchallenge-0.0.1-SNAPSHOT.jar /app/
+# Copia el JAR de la carpeta de compilación a la imagen
+COPY build/libs/codingchallenge-0.0.1-SNAPSHOT.jar app.jar
 
-# Expone el puerto en el que se ejecuta tu aplicación
+# Expone el puerto 8080
 EXPOSE 8080
 
-# Comando para ejecutar la aplicación
-CMD ["java", "-jar", "codingchallenge-0.0.1-SNAPSHOT.jar"]
+# Comando para ejecutar la aplicación cuando se inicie el contenedor
+CMD ["java", "-jar", "app.jar"]
