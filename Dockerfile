@@ -5,7 +5,7 @@ FROM adoptopenjdk/openjdk11:alpine-jre
 WORKDIR /Backend-Code-Challenge
 
 # Copia el JAR construido a la imagen
-COPY build/libs/codingchallenge-0.0.1-SNAPSHOT.jar codingchallenge-0.0.1-SNAPSHOT-plain.jar
+COPY build/libs/codingchallenge-0.0.1-SNAPSHOT.jar /app/
 
 # Expone el puerto en el que se ejecuta tu aplicación
 EXPOSE 8080
