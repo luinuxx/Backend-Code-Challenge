@@ -12,6 +12,7 @@ curl -Method GET https://backend-code-challenge-7z5lcolypq-uw.a.run.app/suggesti
 https://backend-code-challenge-7z5lcolypq-uw.a.run.app/suggestions?q=Londo&latitude=43.70011&longitude=-79.4163
 
 Te devolvera una salida en formato JSON 
+```json
 [
     {
         "name": "West New York, NJ, US",
@@ -32,3 +33,4 @@ Te devolvera una salida en formato JSON
         "score": "0.0"
     }
 ]
+```
