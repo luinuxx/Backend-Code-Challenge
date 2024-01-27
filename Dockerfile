@@ -11,4 +11,4 @@ COPY build/libs/codingchallenge-0.0.1-SNAPSHOT.jar /app/
 EXPOSE 8080
 
 # Comando para ejecutar la aplicación
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "codingchallenge-0.0.1-SNAPSHOT.jar"]
