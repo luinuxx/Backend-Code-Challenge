@@ -1,5 +1,5 @@
 # Usa una imagen de OpenJDK para Java 11 como base
-FROM adoptopenjdk:17-jre-hotspot
+FROM amazoncorretto:17
 
 # Establece el directorio de trabajo en /app
 WORKDIR /app
